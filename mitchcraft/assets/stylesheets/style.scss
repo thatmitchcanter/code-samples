@@ -1,0 +1,23 @@
+/*
+Theme Name: Mitch Canter 2021
+Theme URI: http://www.github.com/thatmitchcanter/monochromatic
+Author: Mitch Canter
+Author URI: http://www.mitchcanter.com
+Description: A WordPress theme used as the foundation for greatness! Built with NPM, Gulp, BrowserSync, Gulp Sass, Bourbon, and Neat.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monochromatic
+*/
+
+@import "normalize";
+@import "bootstrap";
+@import "fonts";
+@import "variables";
+@import "base";
+@import "wordpress";
+
+@import "layout";
+@import "header";
+@import "footer";
+@import "page";

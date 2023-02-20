@@ -1,0 +1,124 @@
+#footer{
+    padding: 5rem 3rem 3rem;
+    margin-left: 340px;
+    width: calc(100% - 340px);
+    background: #233444;
+    color: white;
+    @media screen AND (max-width: 767px){
+        margin-left: 0;
+        width: 100%;
+        padding: 5rem 0 3rem;
+    }
+    #footer_widgets{
+        .widget{
+            p, ul, ol, a{
+                color: #ddd;
+                font-size: 1.3rem;
+                line-height: 2.5rem;
+            }
+            a{
+                transition: .2s all ease;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+            h4.widgettitle{
+                color: white;
+                font-size: 1.3rem;
+                letter-spacing: 4px;
+                line-height: 125%;
+                font-weight: regular;
+                text-transform: uppercase;
+                margin-bottom: 3rem;
+                @media screen AND (max-width: 480px){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .menu{
+            list-style: none;
+        }
+        .row{
+            width: 1500px;
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            padding: 3rem;
+            justify-content: space-between;
+            @media screen AND (max-width: 480px){
+                flex-direction: column;
+                padding: 0 3rem;
+            }
+        }
+        .widget-1{
+            @media screen AND (max-width: 480px){
+                flex: 1 0 100%;
+                border: 0;
+                margin-bottom: 2.5rem;
+            }
+            flex: 0 1 280px;
+            border-right: 15px solid transparent;
+        }
+        .widget-2{
+            @media screen AND (max-width: 480px){
+                flex: 1 0 100%;
+                border: 0;
+                margin-bottom: 2.5rem;
+            }
+            flex: 0 1 205px;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+        }
+        .widget-3{
+            @media screen AND (max-width: 480px){
+                flex: 1 0 100%;
+                border: 0;
+                margin-bottom: 0rem;
+            }
+            p{
+                margin: 0;
+            }
+            input[type='email']{
+                background: rgba(255,255,255,0.3);
+                width: 100%;
+                border: 0px;
+                font-size: 12px;
+                margin-bottom: 3rem;
+                color: white;
+                transition: .2s all ease;
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: #ccc;
+                }
+                &::-moz-placeholder { /* Firefox 19+ */
+                    color: #ccc;
+                }
+                &:-ms-input-placeholder { /* IE 10+ */
+                    color: #ccc;
+                }
+                &:-moz-placeholder { /* Firefox 18- */
+                    color: #ccc;
+                }
+                &:hover{
+                    background: rgba(255,255,255,0.1);
+                }
+            }
+            input[type='submit']{
+                border: 2px solid white;
+                color: white;
+                font-size: 1.1rem !important;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-weight: bold;
+                transition: .2s all ease;
+                border-radius: 50px;
+                line-height: 1;
+                transition: .2s all ease;
+                &:hover{
+                    opacity: .7
+                }
+            }
+            flex: 0 1 430px;
+            border-left: 15px solid transparent;
+        }
+    }
+}

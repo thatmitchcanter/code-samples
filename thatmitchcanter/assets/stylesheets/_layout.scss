@@ -1,0 +1,275 @@
+body{
+  background: rgb(26, 21, 27);
+}
+
+#content, #builder-content{
+    margin-left: 340px;
+    box-sizing: border-box;
+    width: calc(100% - 340px);
+    margin-right: 0;
+    @media screen and (max-width: 767px){
+        margin-left: 0;
+        width: 100%;
+    }
+    body:not(.home) &{
+      @media screen and (max-width: 767px){
+          margin-top: 30px;
+      }
+    }
+    .entry{
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        color: white;
+        p a,
+        li a{
+          color: white;
+          text-decoration: none;
+          transition: .2s box-shadow ease;
+          &:nth-child(1n){
+            box-shadow: inset 0 -2px 0 0 $purple;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $purple;
+            }
+          }
+          &:nth-child(2n){
+            box-shadow: inset 0 -2px 0 0 $pink;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $pink;
+            }
+          }
+          &:nth-child(3n){
+            box-shadow: inset 0 -2px 0 0 $orange;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $orange;
+            }
+          }
+          &:nth-child(4n){
+            box-shadow: inset 0 -2px 0 0 $yellow;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $yellow;
+            }
+          }
+          &:nth-child(5n){
+            box-shadow: inset 0 -2px 0 0 $blue;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $blue;
+            }
+          }
+          &:nth-child(5n){
+            box-shadow: inset 0 -2px 0 0 $green;
+            &:hover{
+              box-shadow: inset 0 -26px 0 0 $green;
+            }
+          }
+        }
+        blockquote.wp-block-quote, blockquote {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: 29px;
+            line-height: 5rem;
+            color: #f37b83;
+            border-left: 15px solid $pink;
+            padding-left: 40px;
+            p{
+              font-size: 20px;
+              line-height: 30px;
+              margin-bottom: 2rem;
+              &:last-child{
+                margin-bottom: 0;
+              }
+            }
+        }
+    }
+    figure{
+        &.post_thumbnail{
+            margin: 0 0 3rem !important;
+
+        }
+        &.ugb-blog-posts__featured-image{
+            img{
+                transition: .15s all ease-in-out;
+                background: black;
+                &:hover{
+                    transform: scale(1.05);
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+.page,
+.single,
+.archive,
+.blog{
+    #content {
+        padding: 8rem 0 4rem;
+        a.title-link{
+            color: #233444;
+            h2.post-title{
+                text-align: center;
+                font-size: 3.6rem;
+                font-weight: bold;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+                margin-bottom: 2rem;
+            }
+        }
+        .pre-meta,
+        .post-meta{
+            p{
+                margin: 0;
+                padding: 0;
+                font-style: italic;
+                color: #888;
+                a{
+                    color: $purple;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: .2s all ease;
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+            text-align: left;
+        }
+        .pre-meta{
+            margin-bottom: 1rem;
+            text-align: center !important;
+            a{
+              text-transform: uppercase;
+              font-weight: 600;
+              font-style: normal;
+              font-size: 1.3rem;
+              letter-spacing: 5px;
+            }
+        }
+        .post-meta{
+            p{
+                text-align: left;
+                font-style: normal;
+                a{
+                    font-weight: bold;
+                }
+            }
+        }
+        h3.post-title{
+            margin-bottom: 1rem;
+        }
+        .cta{
+            text-align: center;
+            a.button{
+                transition: .25s all ease;
+                background: #da521e;
+                color: white;
+                border: 1px solid rgba(0,0,0,0);
+                &:hover{
+                    background: white;
+                    color: #da521e;
+                    border: 1px solid #da521e;
+                }
+            }
+        }
+    }
+}
+
+
+.archive{
+    .page-title{
+        font-family: $poppins;
+        color: $dark-purple;
+        text-align: center;
+        font-size: 2.2rem;
+        line-height: 125%;
+        font-weight: 900;
+        margin-bottom: 3rem;
+
+    }
+}
+
+/* Gutenberg Overrides */
+
+.is-style-outline{
+    color: $dark-blue;
+    a.wp-block-button__link{
+        border: 2px solid $dark-blue;
+        color: $dark-blue;
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .2s all ease;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+.ugb-blog-posts .ugb-blog-posts__category-list a,
+.ugb-blog-posts .ugb-blog-posts__category-list a:hover {
+    text-decoration: none;
+    box-shadow: none;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+h3.ugb-blog-posts__title{
+    font-size: 2.8rem;
+    a{
+        color: #233444;
+        transition: .2s all ease;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+.ugb-blog-posts__meta{
+    color: #888 !important;
+    letter-spacing: 1px;
+}
+
+/* Widgets */
+#about_me{
+    .about_me__headshot{
+        text-align: center;
+        img{
+            margin: -15% 0 auto;
+            max-width: 33%;
+            border-radius: 500px;
+            border: 5px solid white;
+        }
+    }
+    h3{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    p{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Post Grid */
+.fl-post-grid{
+  img{
+    margin-bottom: 1rem;
+  }
+}
+
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+    line-height: 125%;
+}
+
+table.mc-speaking-table{
+  td{
+    width: 25%;
+    &:first-child{
+      width: 50%;
+    }
+  }
+}

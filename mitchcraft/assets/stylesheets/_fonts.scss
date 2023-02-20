@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&family=Ubuntu:wght@300;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
+
+.rainbow span{
+  background: rgb(125,201,159); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(125,201,159,1) 0%, rgba(112,203,208,1) 20%, rgba(164,113,177,1) 40%, rgba(242,125,178,1) 60%, rgba(252,187,128,1) 80%, rgba(245,237,95,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(125,201,159,1) 0%,rgba(112,203,208,1) 20%,rgba(164,113,177,1) 40%,rgba(242,125,178,1) 60%,rgba(252,187,128,1) 80%,rgba(245,237,95,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(125,201,159,1) 0%,rgba(112,203,208,1) 20%,rgba(164,113,177,1) 40%,rgba(242,125,178,1) 60%,rgba(252,187,128,1) 80%,rgba(245,237,95,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
